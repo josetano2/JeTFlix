@@ -1,0 +1,226 @@
+/* main */
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.bg-home{
+    width: 100%;
+    min-height: fit-content;
+}
+
+.bg-signup{
+    width: 100%;
+    min-height: fit-content;
+}
+
+.bg-movies{
+    width: 100%;
+    min-height: fit-content;
+}
+
+.bg-news{
+    width: 100%;
+    min-height: fit-content;
+}
+
+.bg-details{
+    width: 100%;
+    min-height: fit-content;
+}
+
+/* .temp-div{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    opacity: 70%;
+    z-index: 20;
+} */
+
+/* navbar */
+.navbar{
+    display: flex;
+    position: fixed;
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(88,88,88,0) 100%);
+    width: 100%;
+    top: 0;
+    z-index: 727;
+    justify-content: space-around;
+}
+
+.navbar-leftside{
+    display: flex;
+    width: 50%;
+    justify-content: start;
+    align-items: center;
+    gap: 2vw;
+    padding: 2vh 2vw;
+    white-space: nowrap;
+}
+
+.navbar-left-content {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 2vw;
+}
+
+.navbar-leftside a{
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 1.25rem;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.navbar-rightside{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 50%;
+    gap: 2vw;
+    padding: 2vh 2vw;
+}
+
+.search-icon{
+    display: flex;
+    right: 8vw;
+    top: 2.5vh;
+    width: 25px;
+    height: 25px;
+}
+
+.signup-button{
+    background-color: #831010;
+    width: 7rem;
+    /* padding: 0 4.2vw; */
+    border-color: transparent;
+    font-family: 'Palanquin Dark', sans-serif;
+    color: white;
+    border-radius: 10px;
+    font-size: 1.25rem;
+}
+
+.search-button-temp{
+    display: none;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 1.25rem;
+    text-decoration: none;
+}
+
+.signup-button-temp{
+    display: none;
+    background-color: #831010;
+    width: 7rem;
+    /* padding: 0 4.2vw; */
+    border-color: transparent;
+    font-family: 'Palanquin Dark', sans-serif;
+    color: white;
+    border-radius: 10px;
+    font-size: 1.25rem;
+}
+
+/* burger menu */
+.burger-menu{
+    display: none;
+    cursor: pointer;
+}
+
+.menu-stripes{
+    display: block;
+    width: 25px;
+    height: 4px;
+    margin: 4px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* footer */
+.footer{
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5vh;
+    background-color: black;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 2vh;  
+    padding-top: 2vh;  
+}
+
+.logo-footer{
+    margin-right: 0.5vw;
+}
+
+/* scrollbar */
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #DB0000;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+    width: 3px;
+}
+
+@media (max-width: 768px){
+
+    .burger-menu{
+        display: block;
+    }
+    .search-icon{
+        display: none;
+    }
+    .search-button-temp{
+        display: flex;
+    }
+    .signup-button{
+        display: none;
+    }
+    .signup-button-temp{
+        display: block;
+    }
+    .navbar-left-content{
+        position: fixed;
+        left: -100%;
+        top: 60px;
+        gap: 0;
+        flex-direction: column;
+        background-color: rgb(0, 0, 0);
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        transition: 0.2s;
+        border-bottom: 1px;
+        border-bottom-style: solid;
+        border-bottom-color: #DB0000;
+    }
+    .navbar-left-content.active{
+        left: 0;
+        transition: 0.2s;
+    }
+    .navbar-leftside li{
+        margin: 1rem 0;
+    }
+    .temp-div.active{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        min-height: 100vh;
+        background-color: rgb(0, 0, 0);
+        opacity: 50%;
+        z-index: 20;
+    }
+
+}

@@ -1,0 +1,342 @@
+body{
+    overflow-x: hidden;
+}
+/* jumbotron */
+.jumbotron-bg{
+    width: 100%;
+    height: 60vh;
+}
+
+.banner-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    opacity: 40%;
+}
+
+.left-gradient{
+    position: absolute;
+    width: 32vw;
+    height: 60vh;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(88,88,88,0) 100%);
+    z-index: 9;
+}
+
+.bottom-gradient{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 31%; 
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(88,88,88,0) 100%);
+    top: 30%;
+    z-index: 9;
+}
+
+.details-content{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    /* top: 8rem; */
+    margin: 0 5.2vw;
+    z-index: 10;
+    gap: 2rem;
+    margin-top: -50vh;
+}
+
+.jumbotron{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    font-family: 'Palanquin Dark', sans-serif;
+    gap: 2rem;
+}
+
+
+.jumbotron h2 {
+    font-size: 75px;
+    color: white;
+    line-height: 3rem;
+    margin: 0;
+}
+
+.jumbotron h4{
+    font-size: 30px;
+    color: #DB0000;
+    line-height: 3rem;
+    margin: 0;
+}
+
+.jumbotron-desc{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+    color: white;
+    width: 40%;
+    font-weight: normal;
+}
+
+.hide-lines{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+}
+
+.jumbotron-button{
+    background-color: #831010;
+    width: 10rem;
+    border-color: transparent;
+    font-family: 'Palanquin Dark', sans-serif;
+    color: white;
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+
+.jumbotron-info{
+    font-size: 20px;
+}
+
+.jumbotron-cast{
+    display: flex;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.jumbotron-creators{
+    display: flex;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.jumbotron-info-text{
+    margin-left: 0.5vw;
+    color: rgb(154, 154, 154);
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+
+/* details genre */
+.details-genre-container{
+    display: flex;
+    gap: 1vw;
+}
+
+.details-genre-button{
+    padding: 0.5vh 0.5vw;
+    border-color: white;
+    background-color: transparent;
+    color: white;
+    border-style: solid;
+    border-radius: 5px;
+    font-family: 'Palanquin Dark', sans-serif;
+    font-size: 20px;
+    z-index: 12;
+}
+
+/* synopsis & episodes */
+.description-container{
+    display: flex;
+    flex-direction: column;
+}
+
+/* synopsis */
+.synopsis-container{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.synopsis-h4{
+    font-size: 40px;
+    margin: 0;
+}
+
+.synopsis-text{
+    padding-top: 2vh;
+    text-align: justify;
+    color: rgb(154, 154, 154);
+    font-size: 21px;
+}
+
+/* episodes */
+.episodes-container{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.episodes-info-container{
+    display: flex;
+    align-items: center;
+    gap: 3vw;
+    padding-bottom: 4vh;
+}
+
+.episodes-h4{
+    padding-top: 2vh;
+    font-size: 40px;
+    margin: 0;
+    margin-bottom: 2vh;
+}
+
+.episodes-numbering{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    width: 1vw;      
+}
+
+.episodes-img{
+    width: 23%;
+    border-radius: 10px;
+}
+
+.episodes-title{
+    font-weight: bold;
+    font-size: 40px;
+    padding-bottom: 3vh;
+}
+
+.episodes-description{
+    font-size: 21px;
+    text-align: justify;
+    color: rgb(154, 154, 154);
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+}
+
+/* responsive */
+@media (max-width: 768px){
+
+    .jumbotron{
+        gap: 1.5rem;
+    }
+
+    .jumbotron h2{
+        font-size: 60px;
+        top: 13vh;
+    }
+
+    .jumbotron-desc{
+        width: 80%;
+        font-size: 18px;
+        top: 31vh;
+    }
+    
+    .movie-img-card-container{
+        width: 25vw;
+    }
+
+    .movie-img{
+        width: 25vw;
+        height: 34vh;
+    }
+
+    .jumbotron-cast{
+        font-size: 16px;
+    }
+    
+    .jumbotron-creators{
+        font-size: 16px;
+    }
+
+    .jumbotron-info-text{
+        font-size: 16px;
+    }
+    .details-genre-button{
+        font-size: 16px;
+    }
+
+    /* synopsis */
+    .synopsis-text{
+        font-size: 16px;
+    }
+    .synopsis-h4{
+        font-size: 30px;
+    }
+
+    /* episodes */
+    .episodes-h4{
+        font-size: 30px;
+    }
+
+    .episodes-numbering{
+        font-size: 30px;
+        padding-right: 3vw;
+    }
+
+    .episodes-title{
+        font-size: 20px;
+    }
+
+    .episodes-description{
+        font-size: 16px;
+    }
+
+    .episodes-img{
+        width: 30%;
+    }
+
+}
+
+@media (max-width: 480px){
+
+    .jumbotron{
+        gap: 1rem;
+    }
+
+    .jumbotron h2{
+        font-size: 45px;
+    }
+
+    .jumbotron-desc{
+        font-size: 16px;
+    }
+
+    .jumbotron-cast{
+        font-size: 12px;
+    }
+    
+    .jumbotron-creators{
+        font-size: 12px;
+    }
+
+    .jumbotron-info-text{
+        font-size: 12px;
+    }
+
+    .details-genre-button{
+        font-size: 12px;
+    }
+
+    .synopsis-text{
+        font-size: 12px;
+    }
+
+    .synopsis-h4{
+        font-size: 25px;
+    }
+
+    .episodes-h4{
+        font-size: 25px;
+    }
+
+    .episodes-numbering{
+        font-size: 20px;
+        padding-right: 4vw;
+    }
+
+    .episodes-title{
+        font-size: 16px;
+        padding-bottom: 0;
+    }
+
+    .episodes-description{
+        font-size: 12px;
+        -webkit-line-clamp: 2;
+    }
+}
